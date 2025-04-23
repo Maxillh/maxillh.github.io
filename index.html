@@ -1,116 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>sosc</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimalist Site</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
-    /* Global reset */
-    body, h1, p, a {
+    /* Resetting default styles */
+    * {
       margin: 0;
       padding: 0;
-      font-family: 'Arial', sans-serif;
+      box-sizing: border-box;
     }
 
-    /* Body Styling */
-    body {
-      background-color: #141414;
-      color: #e3e3e3;
+    html, body {
+      height: 100%;
+      font-family: 'Roboto', sans-serif;
+      background-color: #111; /* Dark background */
+      color: white; /* White text */
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
       text-align: center;
+      overflow: hidden; /* Prevent scroll */
     }
 
-    /* Avatar Styling */
-    .avatar {
-      border-radius: 50%;
-      width: 160px;
-      height: 160px;
-      border: 4px solid #4c4c4c;
-      margin-bottom: 20px;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-    }
-
-    /* Username Styling */
-    h1 {
-      font-size: 32px;
-      color: #ffcc00;
-      margin-bottom: 10px;
-    }
-
-    /* Status Styling */
-    p {
-      font-size: 18px;
-      color: #b4b4b4;
-      margin-bottom: 30px;
-    }
-
-    /* Link Styling */
-    .links {
+    /* Full height container */
+    .container {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: center;
+      height: 100vh;
+      width: 100%;
+      position: relative;
     }
 
-    .link {
-      background-color: #2b2b2b;
-      color: #e3e3e3;
-      text-decoration: none;
-      padding: 12px 25px;
-      margin: 10px;
-      border-radius: 8px;
-      width: 220px;
+    h1 {
+      font-size: 70px;
+      letter-spacing: 4px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    p {
       font-size: 18px;
-      transition: background-color 0.3s ease, transform 0.2s ease;
+      margin-top: 15px;
+      letter-spacing: 1px;
+      color: #ccc;
     }
 
-    .link:hover {
-      background-color: #333;
-      transform: translateY(-3px);
+    a {
+      text-decoration: none;
+      color: white;
+      padding: 12px 30px;
+      background-color: #00bcd4;
+      border-radius: 25px;
+      font-size: 18px;
+      margin-top: 25px;
+      transition: background-color 0.3s ease;
     }
 
-    /* Footer Styling */
-    footer {
-      margin-top: 30px;
-      font-size: 14px;
-      color: #7e7e7e;
+    a:hover {
+      background-color: #0097a7;
     }
 
-    /* Responsive Styles */
-    @media (max-width: 600px) {
-      .avatar {
-        width: 140px;
-        height: 140px;
+    /* Background styling */
+    .background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://www.w3schools.com/w3images/forest.jpg'); /* Replace with your own image */
+      background-size: cover;
+      background-position: center;
+      filter: blur(8px); /* Background blur effect */
+      z-index: -1;
+    }
+
+    /* Fade-in animation for text */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
       }
-
-      h1 {
-        font-size: 28px;
-      }
-
-      .link {
-        width: 200px;
-        font-size: 16px;
+      100% {
+        opacity: 1;
       }
     }
   </style>
 </head>
 <body>
-  <div>
-    <img class="avatar" src="https://cdn.discordapp.com/avatars/395043356288860171/a_2a0ee84b8a66ec4e83b92b35b4f9fc7f.gif?size=512" alt="sosc avatar" />
-    <h1>@sosc</h1>
-    <p>⚡️ guns.lol clone — now under your control</p>
 
-    <div class="links">
-      <a class="link" href="https://discord.com/users/395043356288860171" target="_blank">Discord</a>
-      <a class="link" href="https://sosc.lol" target="_blank">sosc.lol</a>
-      <a class="link" href="https://github.com/sosc" target="_blank">GitHub</a>
-    </div>
+  <div class="background"></div> <!-- Background Image -->
 
-    <footer>
-      <p>Not affiliated with guns.lol</p>
-    </footer>
+  <div class="container">
+    <h1>Minimalist Website</h1>
+    <p>Simple, clean, and effective.</p>
+    <a href="https://your-link.com" target="_blank">Learn More</a>
   </div>
+
 </body>
 </html>
