@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>soscnt</title>
+  <title>sosc</title>
   <style>
     /* General Reset */
-    body, h1, p, a, div {
+    body, h1, p, a {
       margin: 0;
       padding: 0;
       font-family: 'Arial', sans-serif;
@@ -39,4 +39,74 @@
     h1 {
       font-size: 32px;
       color: #f9b94c;
-      margin: 10
+      margin: 10px 0;
+    }
+
+    /* Status Text Styling */
+    p {
+      font-size: 18px;
+      color: #b2b2b2;
+      margin-bottom: 20px;
+    }
+
+    /* Links Section */
+    .links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    /* Link Styling */
+    .link {
+      background-color: #2c2c2c;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 25px;
+      font-size: 18px;
+      border-radius: 10px;
+      width: 220px;
+      text-align: center;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    .link:hover {
+      background-color: #444;
+    }
+
+    /* Footer Styling */
+    footer {
+      margin-top: 30px;
+      color: #888;
+      font-size: 12px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      .avatar {
+        width: 120px;
+        height: 120px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+      .link {
+        width: 200px;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img class="avatar" src="https://cdn.discordapp.com/avatars/395043356288860171/a_2a0ee84b8a66ec4e83b92b35b4f9fc7f.gif?size=512" alt="sosc avatar" />
+  <h1>@sosc</h1>
+  <p>⚡️ guns.lol clone — now under your control</p>
+
+  <div class="links">
+    <a class="link" href="https://discord.com/users/395043356288860171" target="_blank">Discord</a>
+    <a class="link" href="https://sosc.lol" target="_blank">sosc.lol</a>
+    <a class="link" href="https://github.com/sosc" target="_blank">GitHub</a>
+  </div>
+
+  <footer>
