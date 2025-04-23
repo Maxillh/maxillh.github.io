@@ -5,65 +5,112 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>sosc</title>
   <style>
-    /* Global Reset */
+    /* Global reset */
     body, h1, p, a {
       margin: 0;
       padding: 0;
       font-family: 'Arial', sans-serif;
     }
 
-    /* Background and Layout */
+    /* Body Styling */
     body {
       background-color: #141414;
+      color: #e3e3e3;
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       height: 100vh;
       text-align: center;
-      padding: 0;
     }
 
     /* Avatar Styling */
     .avatar {
       border-radius: 50%;
-      width: 150px;
-      height: 150px;
-      border: 5px solid #4c4c4c;
+      width: 160px;
+      height: 160px;
+      border: 4px solid #4c4c4c;
       margin-bottom: 20px;
       box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-      transition: transform 0.3s ease;
     }
 
-    .avatar:hover {
-      transform: scale(1.1);
-    }
-
-    /* Title Styling */
+    /* Username Styling */
     h1 {
-      font-size: 36px;
+      font-size: 32px;
       color: #ffcc00;
-      font-weight: bold;
       margin-bottom: 10px;
     }
 
-    /* Subtext Styling */
+    /* Status Styling */
     p {
-      color: #888;
-      font-size: 20px;
+      font-size: 18px;
+      color: #b4b4b4;
       margin-bottom: 30px;
     }
 
-    /* Links Section */
+    /* Link Styling */
     .links {
       display: flex;
       flex-direction: column;
-      gap: 10px;
-      margin-bottom: 40px;
+      align-items: center;
     }
 
-    /* Link Styling */
     .link {
+      background-color: #2b2b2b;
+      color: #e3e3e3;
+      text-decoration: none;
+      padding: 12px 25px;
+      margin: 10px;
+      border-radius: 8px;
+      width: 220px;
+      font-size: 18px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .link:hover {
       background-color: #333;
-      color: white;
-      text-decoration: none
+      transform: translateY(-3px);
+    }
+
+    /* Footer Styling */
+    footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #7e7e7e;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 600px) {
+      .avatar {
+        width: 140px;
+        height: 140px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .link {
+        width: 200px;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <img class="avatar" src="https://cdn.discordapp.com/avatars/395043356288860171/a_2a0ee84b8a66ec4e83b92b35b4f9fc7f.gif?size=512" alt="sosc avatar" />
+    <h1>@sosc</h1>
+    <p>⚡️ guns.lol clone — now under your control</p>
+
+    <div class="links">
+      <a class="link" href="https://discord.com/users/395043356288860171" target="_blank">Discord</a>
+      <a class="link" href="https://sosc.lol" target="_blank">sosc.lol</a>
+      <a class="link" href="https://github.com/sosc" target="_blank">GitHub</a>
+    </div>
+
+    <footer>
+      <p>Not affiliated with guns.lol</p>
+    </footer>
+  </div>
+</body>
+</html>
